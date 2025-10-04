@@ -27,7 +27,6 @@ aside {
   padding: 20px;
 }
 
-
 /* Optional: style header and footer */
 header, footer {
   background-color: #eee;
@@ -35,8 +34,76 @@ header, footer {
   text-align: center;
 }
 
-
-.logo img {
-  vertical-align: middle;
+/* Logo styling for Unicode character */
+.logo {
+  font-size: 2em;
+  font-weight: bold;
   margin-right: 20px;
 }
+
+/* Header navigation styling */
+header ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+header li {
+  margin-right: 15px;
+}
+
+header a {
+  text-decoration: none;
+  color: #333;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+/* Article styling */
+article {
+  background-color: #f9f9f9;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #999;
+  padding: 10px;
+  text-align: left;
+}
+
+thead {
+  background-color: #ddd;
+}
+
+/* Aside styling */
+aside {
+  background-color: #e6f7ff;
+  border-left: 4px solid #4B0082;
+  padding: 20px;
+  font-style: italic;
+}
+
+/* Footer styling */
+footer {
+  background-color: #4B0082;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9em;
+}
+
+
