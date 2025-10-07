@@ -1,0 +1,156 @@
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('fonts/SourceSansPro-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('fonts/SourceSansPro-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+  --main-color: #FF6565;
+  --max-width: 1000px;
+}
+
+/* Base styles */
+body {
+  font-family: 'Source Sans Pro Regular', sans-serif;
+  color: #fff;
+  background-color: #000;
+}
+
+/* Header section */
+.header {
+  background-image: url("images/headphones_hero_1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Container */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Navigation */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu-link {
+  font-family: 'Source Sans Pro Bold', sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.nav-links a:hover,
+.nav-links a:active {
+  color: var(--main-color);
+}
+
+/* Hero section */
+.hero {
+  text-align: center;
+  padding: 300px 20px 60px; /* Top, sides, bottom */
+}
+
+.hero h1 {
+  font-family: 'Source Sans Pro Bold', sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.hero-lead {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 700; /* Bold */
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.hero-description {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400 !important; 
+  font-size: 16px;
+  line-height: 1.6;
+  color: #fff;
+  max-width: 700px;
+  margin: 30px auto 0;
+  text-align: center;
+}
+
+.hero button {
+  font-family: 'Source Sans Pro Bold', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  background-color: var(--main-color);
+  color: #fff;
+  border: none;
+  border-radius: 22px;
+  width: 162px;
+  height: 44px;
+  opacity: 1; /* 100% */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Drop shadow */
+  display: block;
+  margin: 0 auto; /* Center horizontally */
+  cursor: pointer;
+}
+
+.hero button:hover,
+.hero button:active {
+  opacity: 0.9;
+}
+
+/* Responsive */
+@media screen and (max-width: 480px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+}
+

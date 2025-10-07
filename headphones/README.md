@@ -31,6 +31,47 @@ _Add screenshots of desktop and mobile views once you finish the build._
 - No external frameworks or libraries used
 - All assets sourced from ALX-provided archives
 
+## TROUBLESHOOTING JOURNAL
+
+### Font Weight Override Due to Semantic Tag Mismatch
+
+**Issue:**  
+Both paragraphs inside the `.hero` section were rendering with the same font weight—either both bold or both regular—despite having distinct classes (`.hero-lead` and `.hero-description`) and separate font-weight declarations.
+
+**Cause:**  
+The container was opened with `<div class="hero">` but closed with `</section>`, creating a semantic mismatch. This disrupted the cascade and caused unexpected inheritance behavior, making class-specific styles ineffective.
+
+**Fix:**  
+- Replaced `<div>` with `<section>` to match semantic intent and closing tag.
+- Applied unique classes to each paragraph:
+  ```html
+  <p class="hero-lead">High-quality headphones for your everyday life.</p>
+  <p class="hero-description">Lorem ipsum dolor sit amet...</p>
+
+Scoped font weights explicitly in CSS:
+.hero-lead {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 700;
+}
+
+.hero-description {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+}
+
+Validation:
+
+Verified font rendering in DevTools → Computed styles.
+
+Confirmed correct font files loaded in Network tab.
+
+Ensured spacing and layout matched Figma spec.
+
+Lesson Learned:
+
+Even with perfect CSS, a mismatched semantic tag can hijack your cascade. Always validate your opening and closing tags—especially when using semantic containers like <section>, <article>, or <main>.
+
+
 ## Author
 Grace Wesonga – Junior Developer, ALX FE SE Program
 
