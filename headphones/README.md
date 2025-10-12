@@ -71,8 +71,21 @@ Lesson Learned:
 
 Even with perfect CSS, a mismatched semantic tag can hijack your cascade. Always validate your opening and closing tags—especially when using semantic containers like <section>, <article>, or <main>.
 
-
 ## Author
 Grace Wesonga – Junior Developer, ALX FE SE Program
+
+### Task 0: Header and Hero Section
+
+### Task 1: Navigation and Hero Text
+
+### Task 2: What We Do Section
+
+### Task 3: Our Results Section
+
+- Implemented red pentagon layout with +2% and caption text
+- Applied Source Sans Pro Regular 14px for caption
+- Added background image (`headphones_hero_2.jpg`) for visual depth
+- Increased spacing between pentagons and heading for clarity
+
 
 
