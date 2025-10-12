@@ -1,0 +1,464 @@
+@font-face {
+  font-family: 'holberton_school-icon';
+  src: url('fonts/holberton_school-icon.eot');
+  src: url('fonts/holberton_school-icon.eot?#iefix') format('embedded-opentype'),
+       url('fonts/holberton_school-icon.woff') format('woff'),
+       url('fonts/holberton_school-icon.ttf') format('truetype'),
+       url('fonts/holberton_school-icon.svg#holberton_school-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('fonts/SourceSansPro-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('fonts/SourceSansPro-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+  --main-color: #FF6565;
+  --max-width: 1000px;
+}
+
+/* Base styles */
+body {
+  font-family: 'Source Sans Pro Regular', sans-serif;
+  color: #fff;
+  background-color: #000;
+}
+
+/* Header section */
+.header {
+  background-image: url("images/headphones_hero_1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Container */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Navigation */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu-link {
+  font-family: 'Source Sans Pro Bold', sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.nav-links a:hover,
+.nav-links a:active {
+  color: var(--main-color);
+}
+
+/* Hero section */
+.hero {
+  text-align: center;
+  padding: 300px 20px 60px; /* Top, sides, bottom */
+}
+
+.hero h1 {
+  font-family: 'Source Sans Pro Bold', sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.hero-lead {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 700; /* Bold */
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.hero-description {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400 !important; 
+  font-size: 16px;
+  line-height: 1.6;
+  color: #fff;
+  max-width: 700px;
+  margin: 30px auto 0;
+  text-align: center;
+}
+
+.hero button {
+  font-family: 'Source Sans Pro Bold', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  background-color: var(--main-color);
+  color: #fff;
+  border: none;
+  border-radius: 22px;
+  width: 162px;
+  height: 44px;
+  opacity: 1; /* 100% */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Drop shadow */
+  display: block;
+  margin: 0 auto; /* Center horizontally */
+  cursor: pointer;
+}
+
+.hero button:hover,
+.hero button:active {
+  opacity: 0.9;
+}
+
+/* Responsive */
+@media screen and (max-width: 480px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+}
+
+@keyframes bounce {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.what-we-do {
+  background-color: #ffffff; /* white background */
+  color: #000000; /* pure black */
+  font-family: 'Source Sans Pro', Arial, sans-serif;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.what-we-do-description {
+  max-width: 800px;
+  margin: 20px auto;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #000000;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.service {
+  flex: 1 1 22%; /* 4 items per row with spacing */
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.service:hover {
+  animation: bounce 0.4s ease-in-out;
+}
+
+.holberton_school-icon-ic_hearing {
+  font-family: 'holberton_school-icon';
+  font-size: 36px;
+  color: #FF6565;
+}
+
+.holberton_school-icon-ic_music {
+  font-family: 'holberton_school-icon';
+  font-size: 36px;
+  color: #FF6565;
+}
+
+.holberton_school-icon-ic_video {
+  font-family: 'holberton_school-icon';
+  font-size: 36px;
+  color: #FF6565;
+}
+
+.holberton_school-icon-ic_sound {
+  font-family: 'holberton_school-icon';
+  font-size: 36px;
+  color: #FF6565;
+}
+
+.results {
+  text-align: center;
+}
+
+.our-results {
+  background-image: url('images/headphones_hero_2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 60px 20px;
+  text-align: center;
+  color: white;
+}
+
+.results-description {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14px;
+  color: #FFFFFF;
+  max-width: 600px;
+  margin: 30px auto 40px;
+}
+
+.our-results h2 {
+  text-align: center;
+  font-weight: 600; /* SemiBold */
+  font-size: 28px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.pentagon-row {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.pentagon {
+  width: 100px;
+  height: 100px;
+  background-color: #FF6565;
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+  text-align: center;
+}
+
+.percentage {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 2px;
+}
+
+.pentagon:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.contact-us {
+  background-color: #fff;
+  color: #071629;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact-description {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.contact-form label {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.contact-form button {
+  font-family: 'Source Sans Pro Bold', sans-serif;
+  font-size: 14px;
+  background-color: #FF6565;
+  color: white;
+  border: none;
+  border-radius: 22px;
+  padding: 12px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  align-self: center;
+  width: 200px;
+}
+
+.contact-form button:hover,
+.contact-form button:active {
+  opacity: 0.9;
+}
+
+.footer {
+  background-color: #071629;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 20px;
+}
+
+.footer-icons a {
+  font-family: 'holberton_school-icon';
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.footer-text {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14px;
+}
+
+.footer-icons a:hover {
+  color: #d4af37; /* or any accent color */
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
+.footer-logo {
+  height: 44px;
+  width: auto;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-bottom {
+  margin-top: 30px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.footer-bottom p {
+  color: rgba(255, 255, 255, 0.3517); /* white with 35.17% opacity */
+}
+
+.social-icon {
+  font-family: 'holberton_school-icon';
+  font-size: 24px;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  text-decoration: none;
+  display: inline-block;
+}
+
+@media screen and (max-width: 480px) {
+  .services {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service {
+    width: 100%;
+    text-align: center;
+  }
+
+  .contact-form {
+    padding: 0 10px;
+  }
+
+  .contact-form button {
+    width: 100%;
+  }
+
+  .footer-logo {
+    width: 100px;
+    height: auto;
+  }
+
+  .footer-right {
+    margin-top: 20px;
+    justify-content: center;
+  }
+
+  .footer-icons {
+    gap: 20px;
+  }
+
+  .footer-text {
+    font-size: 12px;
+  }
+}
+
+
