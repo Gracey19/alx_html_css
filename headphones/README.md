@@ -110,3 +110,16 @@ Replaced the image-based layout in the “Our results” section with pure HTML 
 -Removed `headphones_hero_2.jpg` and replaced with solid background color `#071629`
 
 This implementation meets ALX’s requirement for semantic structure and image-free geometry, while preserving editorial clarity and visual impact.
+
+### Task 8: Hamburger Menu Implementation
+
+Enhanced mobile responsiveness by adding a hamburger menu using pure JavaScript:
+
+- Replaced navigation links with a hamburger icon on screens ≤ 480px
+- Toggled menu visibility with smooth transitions using `classList.toggle('active')`
+- Styled the icon using three stacked `<span>` bars with Flexbox and transitions
+- Ensured accessibility and responsiveness across screen sizes
+- No frameworks used—pure HTML, CSS, and JavaScript
+
+This final task completes the ALX Front-End HTML & CSS block, demonstrating mastery of layout, animation, and responsive design.
+
