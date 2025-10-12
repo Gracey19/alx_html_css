@@ -91,11 +91,22 @@ Grace Wesonga – Junior Developer, ALX FE SE Program
 
 Implemented a clean, responsive contact form based on the Figma design:
 
-- ✅ Added labeled fields for **Name**, **Email**, and **Message**
-- ✅ Styled inputs and textarea using Source Sans Pro, 14px
-- ✅ Designed a bold red **“CALL TO ACTION”** button with hover effect
-- ✅ Ensured mobile responsiveness at screen width ≤ 480px
-- ✅ Applied semantic HTML tags and `required` attributes for basic validation
+-Added labeled fields for **Name**, **Email**, and **Message**
+-Styled inputs and textarea using Source Sans Pro, 14px
+-Designed a bold red **“CALL TO ACTION”** button with hover effect
+-Ensured mobile responsiveness at screen width ≤ 480px
+-Applied semantic HTML tags and `required` attributes for basic validation
 
 This section balances clarity, accessibility, and editorial polish—ready for real-world client use.
 
+### Task 6: Replace Background Image with Code
+
+Replaced the image-based layout in the “Our results” section with pure HTML and CSS pentagons:
+
+-Drew each pentagon using `clip-path: polygon(...)`—no image files used
+-Styled percentage values (`+2%`) and caption text (`Lorem ipsum dolor`) inside each shape
+-Applied `Source Sans Pro` with SemiBold for headings and Regular 14px for labels
+-Used Flexbox for responsive layout and spacing
+-Removed `headphones_hero_2.jpg` and replaced with solid background color `#071629`
+
+This implementation meets ALX’s requirement for semantic structure and image-free geometry, while preserving editorial clarity and visual impact.
