@@ -87,5 +87,15 @@ Grace Wesonga – Junior Developer, ALX FE SE Program
 - Added background image (`headphones_hero_2.jpg`) for visual depth
 - Increased spacing between pentagons and heading for clarity
 
+### Task 4: Contact Us Section
 
+Implemented a clean, responsive contact form based on the Figma design:
+
+- ✅ Added labeled fields for **Name**, **Email**, and **Message**
+- ✅ Styled inputs and textarea using Source Sans Pro, 14px
+- ✅ Designed a bold red **“CALL TO ACTION”** button with hover effect
+- ✅ Ensured mobile responsiveness at screen width ≤ 480px
+- ✅ Applied semantic HTML tags and `required` attributes for basic validation
+
+This section balances clarity, accessibility, and editorial polish—ready for real-world client use.
 
